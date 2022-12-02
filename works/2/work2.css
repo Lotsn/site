@@ -1,0 +1,148 @@
+.container_homework2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 200px;
+    background: url('relax2.jpg');
+    background-size: cover;
+    overflow: hidden;
+  align-items: center;
+  justify-content: center; 
+}
+
+.spruce {
+    position: absolute;
+    top: 70px;
+    left: -3px;
+    width: 100px;
+    height: 100px;
+}
+
+.fox {
+    position: absolute;
+    width: 80px;
+    height: 80px;  
+}
+
+img.fox.fox1 {
+    top: 100px;
+    left: 100%;
+    transition: 2s;
+}
+
+.container_homework2:hover .fox1{
+    top: 100px;
+    left: 50%;
+}
+
+img.fox.fox2 {
+    top: 100px;
+    left: 100%;  
+}
+
+.container_homework2:active .fox2 {
+    top: 100px;
+    left: 50%;
+}
+
+p.mess {
+
+    position: absolute;
+    width: 100%;
+    top: 10%;
+    left:100%;
+    transition: 3s;
+}
+
+p.mess2 {
+    position: absolute;
+    width: 100%;
+    top: 40%;
+    left:100%;
+    transform:rotate(25deg);
+    color: orange;
+    transition: 3s;
+} 
+
+.container_homework2:hover p.mess {
+   left: 30%;
+}
+
+
+
+img.sun {
+    position: absolute;
+    top: 0%;
+    width: 60px;
+    right: -100%;
+    
+}
+
+.container_homework2:active img.sun {
+    animation: sun_walk 5s infinite;
+}
+
+.container_homework2:active .fox1 {
+    display: none;
+}
+
+.container_homework2:active p.mess{
+    display: none;
+}
+
+ .container_homework2:active p.mess2 {
+    left:30%;
+} 
+
+
+.container_homework2:active {
+    animation: wiggle 3s infinite;
+}
+
+
+
+
+
+
+@keyframes sun_walk {
+    0% {
+        right: 0;
+    }
+    50% {
+        right: 70%;
+    }
+       100% {
+        right: 0;
+    }
+    
+}
+
+
+@keyframes wiggle {
+    0% {
+        margin-top: 15px;
+    }
+    30% {
+        margin-top: 0px;
+        margin-bottom: 15px;  
+    }
+
+    60%{
+        margin-top: 15px;
+        margin-bottom: 0px;    
+    }
+    90% {
+        margin-top: 5px;
+        margin-bottom: 15px;
+    }
+    100% {
+        margin-top: 15px;
+        margin-bottom: 0px;
+
+    }
+
+    
+    
+}
